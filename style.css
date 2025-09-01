@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.startpage {
+    background-color: rgba(245, 245, 245, 0.48);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.large-logo {
+    width: 70%;
+    max-width: 500px;
+    margin-top: -80px;
+}
+img {
+    width: 100%;
+}
+.key {
+    
+    background-color: rgb(0, 173, 6);
+    border-radius: 8px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+.subKey1 {
+    background-color: rgba(53, 189, 58, 1);
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    position: relative;
+    left: -4px;
+    top:-4px;
+    user-select: none;
+    transition: 0.3s;
+    border: 1px solid rgba(53, 189, 58, 1);
+
+}
+.subKey1:hover {
+    background-color: white;
+    color: rgba(53, 189, 58, 1);
+}
+.question-page {
+    background-color: rgb(228, 255, 215);
+    width: 100%;
+    min-height: 100vh;
+    padding: 2% 10%;
+}
+.logo{
+    width: 122px;
+}
+#question {
+    /* font-weight: 600; */
+    background-color: rgba(245, 245, 245, 0.753);
+    border: 3px solid rgb(209, 207, 207);
+    width: 100%;
+    max-width: 999px;
+    padding: 44px 22px;
+    border-radius: 12PX;
+    margin: 22px auto;
+    margin-top: 8px;
+}
+
+#ans-container{
+    margin: 22px auto;
+    max-width: 999px;
+    border-radius: 12PX;
+    padding: 22px;
+    background-color: rgba(245, 245, 245, 0.753);
+    border: 3px solid rgb(209, 207, 207);
+    cursor: pointer;
+    user-select: none;
+}
+.answer {
+    border-radius: 8px;
+    padding: 22px;
+    margin-top: 12px;
+    background-color: rgba(245, 245, 245, 0.753);
+    border: 3px solid rgb(209, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 999px;
+    margin: 0 auto;
+}
+.total .count{
+    background-color: rgba(254, 195, 61, 1);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+.error  {
+    color: red;
+}
+.total h3 {
+    margin: 0;
+}
+
+.answer img {
+    width: 16px;
+}
+.incorrect {
+    border: solid 3px rgb(255, 120, 120);
+    background-color: rgba(255, 120, 120, 0.199);
+}
+.correct {
+    border: solid 3px rgb(111, 230, 0);
+    background-color: rgba(111, 230, 0, 0.199);
+}
+.incorrect .cross {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: rgb(255, 61, 61);
+}
+.correct .check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgb(0, 184, 0);
+    font-weight: 600;
+}
+.cross {
+    display: none;
+}
+.check {
+    display: none;
+}
+.nextBtn {
+    color: green;
+    font-weight: 800;
+    text-align: right;
+    max-width: 999px;
+    margin: 0 auto;
+    user-select: none;
+    cursor: pointer;
+}
+.finishBtn {
+    color: green;
+    font-weight: 800;
+    text-align: right;
+    max-width: 999px;
+    margin: 0 auto;
+    user-select: none;
+    cursor: pointer;
+}
+.resultCard {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.card {
+    background-color: gainsboro;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%) scale(0);
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    background-color: white;
+    border: 3px solid rgba(53, 189, 58, 1);
+    padding: 22px;
+    text-align: center;
+
+}
+
+.openCard {
+    transform: translate(50%,-50%)  scale(1);
+}
+.overLay {
+    position: absolute;
+    transform: translate(50%,-50%) scale(0); 
+    transition: all 0.3s;
+    top: 50%;
+    right: 50%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.274);
+}
+.overLayOpen {
+    
+    min-width: 100%;
+    min-height: 100vh;
+    transform: translate(50%,-50%) scale(1); 
+}
+.progress {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 12px;
+    height: 44px;
+    background-color: rgb(255, 154, 154);
+    color: rgba(53, 189, 58, 1);
+}
+.card h1 {
+    color: rgba(53, 189, 58, 1);
+}
+.progressbar {
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(53, 189, 58, 1);
+}
+.try {
+    user-select: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+.disable {
+    display: none;
+}

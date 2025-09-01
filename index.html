@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+<section class="startpage" id="start">
+<div class="large-logo">
+    <img src="assets/logo.png" alt="">
+</div>
+<div class="key">
+        <div class="subKey1" id="start-now-butn">Start Now >>></div>
+</div>
+</section>
+
+<section id="q-page" class="question-page disable ">
+    <div class="header">
+        <div class="logo"> 
+            <img src="assets/logo.png" alt="">
+        </div>
+        <div class="total">
+            <div class="error" id="error"></div>
+            <div class="count"> <h3 id="questionNo">1/25</h3></div>
+        </div>
+    </div>
+    <div id="question">Inside which HTML element do we put the JavaScript? </div>
+    <div id="ans-container">
+        <div class="answer"> <div id="ans1" class="option">option</div> 
+            <div id="wrong" class="cross">Wrong<img src="assets/cross.svg" alt=""></div>
+                <div id="correct" class="check">Correct<img src="assets/check.svg" alt=""></div>
+            </div>
+        <div class="answer"> <div id="ans2" class="option">option</div> 
+            <div id="wrong" class="cross">Wrong<img src="assets/cross.svg" alt=""></div>
+                <div id="correct" class="check">Correct<img src="assets/check.svg" alt=""></div>
+            </div>
+        <div class="answer"> <div id="ans3" class="option">option</div> 
+            <div id="wrong" class="cross">Wrong<img src="assets/cross.svg" alt=""></div>
+                <div id="correct" class="check">Correct<img src="assets/check.svg" alt=""></div>
+            </div>
+        <div class="answer"> <div id="ans4" class="option">option</div> 
+            <div id="wrong" class="cross">Wrong<img src="assets/cross.svg" alt=""></div>
+                <div id="correct" class="check">Correct<img src="assets/check.svg" alt=""></div>
+            </div>
+
+    </div>
+    <div id="nextBtn" class="nextBtn"> 
+        Next >
+    </div>
+    <div id="finishBtn" class="finishBtn disable"> 
+        FINISH >
+    </div>
+</section>
+
+
+    <div id="overLay" class="overLay">
+    <div id="card" class="card">
+        <h2>You Got</h2>
+        <h2 id="totalMarks">1/12</h2>
+        <div class="progress">
+            <div id="progressbar" class="progressbar"></div>
+        </div>
+        <h1>Keep it Up</h1>
+        <div id="try" class="try">Try Again?</div>
+    </div>
+
+</body>
+</html>
