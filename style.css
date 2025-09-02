@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 .startpage {
     background-color: rgba(245, 245, 245, 0.48);
@@ -80,6 +81,7 @@ img {
     border: 3px solid rgb(209, 207, 207);
     cursor: pointer;
     user-select: none;
+    outline: none;
 }
 .answer {
     border-radius: 8px;
@@ -221,7 +223,20 @@ img {
     cursor: pointer;
 }
 
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+    .header {
+        margin-top: 20%;
+    }
+}
+@media (max-width: 900px) {
 
+    .header {
+        margin-top: 10%;
+    }
+}
 
 
 
